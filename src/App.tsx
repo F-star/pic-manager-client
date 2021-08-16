@@ -1,9 +1,9 @@
-import React from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
-import "./App.css";
-import NormalFrame from "./frames/NormalFrame";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
+import React from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import './App.css';
+import NormalFrame from './frames/NormalFrame';
+import Home from './pages/Home';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </Route>
         <Route path="/">
           <NormalFrame>
-            <Route path="/home">
+            <Route exact path="/home">
               <Home />
             </Route>
           </NormalFrame>

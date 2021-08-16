@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
  * 2. 运行 dev 后，补充显示 url，方便点击，还要带上局域网 url，和 create-react-app 一样
  */
 
-module.exports = function (env) {
+module.exports = function(env) {
   return {
     mode: 'development', // 先写死，晚点再写 production 的逻辑
     entry: {
@@ -70,5 +70,5 @@ module.exports = function (env) {
       compress: true,
       hot: true,
     }
-  }
-}
+  };
+};
